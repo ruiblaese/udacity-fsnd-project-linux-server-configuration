@@ -94,6 +94,23 @@ sudo pip2 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
 sudo pip install Flask-SeaSurf==0.2.2
 ```
 
+### Resources used
+ - [Udacity Nanodegree Program Full Stack Web Developer ](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
+ - [Udacity Course Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)
+ - [Udacity Course Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299)
+ - [How to Install Python 2.7.16 on Ubuntu & LinuxMint](https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/)
+ - [Instalando e configurando o Apache no Linux / Install and configure Apache in Linux](http://www.devfuria.com.br/linux/instalando-apache-via-yum-apt-get/)
+ - [Instalando o módulo WSGI / Install module WSGI](http://www.devfuria.com.br/linux/instalando-apache-wsgi/)
+ - [Python Flask Fazendo deploy com Apache / Deploy Python Flash with Apache](http://www.devfuria.com.br/python/flask-apache/)
+ - [How to Install Pip on Ubuntu 18.04](https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/)
+ - [How to Kill a Process from the Command Line](https://www.linux.com/learn/intro-to-linux/2017/5/how-kill-process-command-line)
+ - [What is the difference between apt-get update and upgrade?*](https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade)
+  - [Ubuntu Server message says packages can be updated, but apt-get does not update any*](https://serverfault.com/questions/265410/ubuntu-server-message-says-packages-can-be-updated-but-apt-get-does-not-update)
+
+These were the links I remembered, if I remember other links I will add later    
+*Udacity, thanks for the tip   
+
+
 ### Others
 Maybe I have forgotten some commands, I had several small problems in the middle of the setup that made me go to the internet several times.
 
