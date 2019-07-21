@@ -10,19 +10,29 @@ My last project for courses [Full Stack Web Developer Nanodegree program](https:
 ### Server Info
 IP: 3.95.21.170     
 Port SSH: 2200     
-WebApp: [http://3.95.21.170](http://3.95.21.170)     
+WebApp: [http://3.95.21.170.xip.io/](http://3.95.21.170.xip.io/)     
 
 ### List of software installed
  - PostgreSQL     
-
+ - htop     
+ - Apache     
+ - Python
+ - Python pip
+ - Python pip libs
+ - git
+ 
 ### List of commands executed in server
+ 
+ Update all currently installed packages.      
  ```
  sudo apt-get update
  sudo apt-get upgrade
  ```   
  
+ Install finger     
  ```sudo apt-get install finger```   
  
+ Install python and dependences   
  ```
  sudo apt-get install build-essential checkinstall
  sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
@@ -34,6 +44,7 @@ WebApp: [http://3.95.21.170](http://3.95.21.170)
  sudo make altinstall
  ```
  
+ Create user and add secury for server   
  ```
  sudo adduser grader
  sudo nano /etc/sudoers.d/grader
@@ -53,12 +64,14 @@ WebApp: [http://3.95.21.170](http://3.95.21.170)
  sudo ufw allow 123/tcp
  ```
  
+ Install apache and configure for python web app
  ```
 sudo apt-get install apache2
 sudo apt-get install libapache2-mod-wsgi
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```
 
+Install postgresql, create user and database for project
 ```
 sudo apt-get install postgresql
 sudo -u postgres -i
@@ -68,6 +81,7 @@ postgres=# create user catalog with encrypted password 'catalog';
 postgres=# grant all privileges on database mydb to catalog;
 ```
 
+Get and configure web app
 ```
 git clone https://github.com/ruiblaese/udacity-fsnd-project-item-catalog
 cd udacity-fsnd-project-item-catalog/vagrant/
@@ -79,6 +93,10 @@ sudo pip2 install flask packaging oauth2client redis passlib flask-httpauth
 sudo pip2 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
 sudo pip install Flask-SeaSurf==0.2.2
 ```
+
+### Others
+Maybe I have forgotten some commands, I had several small problems in the middle of the setup that made me go to the internet several times.
+
 
 ## Author & Supporting 
 ruiblaese@gmail.com
