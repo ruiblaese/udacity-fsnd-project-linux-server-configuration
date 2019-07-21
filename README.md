@@ -8,12 +8,12 @@
 My last project for courses [Full Stack Web Developer Nanodegree program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
 ### Server Info
-IP: 3.95.21.170
-Port SSH:
-WebApp: 
+IP: 3.95.21.170     
+Port SSH: 2200     
+WebApp: [http://3.95.21.170](http://3.95.21.170)     
 
 ### List of software installed
- - PostgreSQL
+ - PostgreSQL     
 
 ### List of commands executed in server
  ```
@@ -53,17 +53,22 @@ WebApp:
  sudo ufw allow 123/tcp
  ```
  
+ ```
 sudo apt-get install apache2
 sudo apt-get install libapache2-mod-wsgi
 sudo nano /etc/apache2/sites-enabled/000-default.conf
+```
 
+```
 sudo apt-get install postgresql
 sudo -u postgres -i
 psql
 postgres=# create database mydb;
 postgres=# create user catalog with encrypted password 'catalog';
 postgres=# grant all privileges on database mydb to catalog;
+```
 
+```
 git clone https://github.com/ruiblaese/udacity-fsnd-project-item-catalog
 cd udacity-fsnd-project-item-catalog/vagrant/
 sudo cp -r catalog/ /var/www/html/
@@ -73,7 +78,7 @@ sudo pip2 install --upgrade pip
 sudo pip2 install flask packaging oauth2client redis passlib flask-httpauth
 sudo pip2 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
 sudo pip install Flask-SeaSurf==0.2.2
-
+```
 
 ## Author & Supporting 
 ruiblaese@gmail.com
